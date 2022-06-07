@@ -13,7 +13,7 @@ class PageB extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("收藏列表"),
+        title: const Text("收藏列表"),
       ),
       body: ListView.builder(
         itemCount: bookCount,

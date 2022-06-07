@@ -12,7 +12,7 @@ class PageA extends StatelessWidget {
     
     return Scaffold(
       appBar: AppBar(
-        title: Text("书籍列表"),
+        title: const Text("书籍列表"),
       ),
       body: ListView.builder(
         itemCount: bookModel.length,

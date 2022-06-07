@@ -11,7 +11,7 @@ class _ChangeNotifierProxyProviderExampleState extends State<ChangeNotifierProxy
 
 
   var _selectedIndex = 0;
-  var _pages = [PageA(), PageB()];
+  final _pages = [PageA(), PageB()];
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class _ChangeNotifierProxyProviderExampleState extends State<ChangeNotifierProxy
             _selectedIndex = index;
           });
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.book),
             label: "书籍列表"

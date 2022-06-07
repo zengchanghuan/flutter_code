@@ -7,7 +7,7 @@ class BookItem extends StatelessWidget {
 
   final int id;
 
-  BookItem({
+  const BookItem({
     Key? key,
     required this.id
   }) : super(key: key);
@@ -22,8 +22,8 @@ class BookItem extends StatelessWidget {
       leading: CircleAvatar(
         child: Text("${book.bookId}"),
       ),
-      title: Text("${book.bookName}",
-        style: TextStyle(
+      title: Text(book.bookName,
+        style: const TextStyle(
             color: Colors.black87
         ),
       ),

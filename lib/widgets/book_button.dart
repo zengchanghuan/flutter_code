@@ -7,7 +7,7 @@ class BookButton extends StatelessWidget {
   
   final Book book;
   
-  BookButton({
+  const BookButton({
     Key? key,
     required this.book
   }) : super(key: key);
@@ -18,15 +18,15 @@ class BookButton extends StatelessWidget {
     var bookManagerModel = Provider.of<BookManagerModel>(context);
     
     return GestureDetector(
-      onTap: bookManagerModel.books.contains(this.book)
-          ?  () => bookManagerModel.removeFaves(this.book)
-          :  () => bookManagerModel.addFaves(this.book),
+      onTap: bookManagerModel.books.contains(book)
+          ?  () => bookManagerModel.removeFaves(book)
+          :  () => bookManagerModel.addFaves(book),
       child: SizedBox(
         width: 100,
         height: 60,
-        child: bookManagerModel.books.contains(this.book)
-            ?  Icon(Icons.star, color: Colors.red,)
-            :  Icon(Icons.star_border),
+        child: bookManagerModel.books.contains(book)
+            ?  const Icon(Icons.star, color: Colors.red,)
+            :  const Icon(Icons.star_border),
       ),
     );
   }

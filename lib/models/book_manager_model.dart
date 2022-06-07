@@ -7,7 +7,7 @@ class BookManagerModel with ChangeNotifier {
   final BookModel _bookModel;
 
   // 获取数据所有的ID
-  List<int>? _bookIds;
+  final List<int>? _bookIds;
 
   // 构造函数
   BookManagerModel(this._bookModel, {BookManagerModel? bookManagerModel})

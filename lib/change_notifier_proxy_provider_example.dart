@@ -3,8 +3,10 @@ import '../pages/page_a.dart';
 import '../pages/page_b.dart';
 
 class ChangeNotifierProxyProviderExample extends StatefulWidget {
+  const ChangeNotifierProxyProviderExample({Key? key}) : super(key: key);
+
   @override
-  _ChangeNotifierProxyProviderExampleState createState() => _ChangeNotifierProxyProviderExampleState();
+  State<ChangeNotifierProxyProviderExample> createState() => _ChangeNotifierProxyProviderExampleState();
 }
 
 class _ChangeNotifierProxyProviderExampleState extends State<ChangeNotifierProxyProviderExample> {
@@ -38,3 +40,4 @@ class _ChangeNotifierProxyProviderExampleState extends State<ChangeNotifierProxy
     );
   }
 }
+

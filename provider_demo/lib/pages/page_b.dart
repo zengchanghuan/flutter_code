@@ -5,6 +5,8 @@ import '../models/book_manager_model.dart';
 import 'package:provider/provider.dart';
 
 class PageB extends StatelessWidget {
+  const PageB({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
 

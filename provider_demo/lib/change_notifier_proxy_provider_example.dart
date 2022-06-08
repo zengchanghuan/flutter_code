@@ -13,7 +13,7 @@ class _ChangeNotifierProxyProviderExampleState extends State<ChangeNotifierProxy
 
 
   var _selectedIndex = 0;
-  final _pages = [PageA(), PageB()];
+  final _pages = [PageA(), const PageB()];
 
   @override
   Widget build(BuildContext context) {

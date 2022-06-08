@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../pages/page_a.dart';
-import '../pages/page_b.dart';
+import './pages/page_a.dart';
+import './pages/page_b.dart';
 
 class ChangeNotifierProxyProviderExample extends StatefulWidget {
   const ChangeNotifierProxyProviderExample({Key? key}) : super(key: key);

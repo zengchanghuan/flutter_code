@@ -24,5 +24,4 @@ class BookModel {
   // 根据索引获取数据
   Book getByPosition(int position) => _books[position];
 
-// 更多....
 }

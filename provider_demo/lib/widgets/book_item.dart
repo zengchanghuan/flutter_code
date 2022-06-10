@@ -4,20 +4,12 @@ import '../widgets/book_button.dart';
 import 'package:provider/provider.dart';
 
 class BookItem extends StatelessWidget {
-
   final int id;
 
-  const BookItem({
-    Key? key,
-
-
-
-    required this.id
-  }) : super(key: key);
+  const BookItem({Key? key, required this.id}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
     var bookModel = Provider.of<BookModel>(context);
     var book = bookModel.getById(id);
 
@@ -25,10 +17,9 @@ class BookItem extends StatelessWidget {
       leading: CircleAvatar(
         child: Text("${book.bookId}"),
       ),
-      title: Text(book.bookName,
-        style: const TextStyle(
-            color: Colors.black87
-        ),
+      title: Text(
+        book.bookName,
+        style: const TextStyle(color: Colors.black87),
       ),
       trailing: BookButton(book: book),
     );

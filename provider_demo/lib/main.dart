@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'models/book_model.dart';
 import 'models/book_manager_model.dart';
 import 'change_notifier_proxy_provider_example.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -48,7 +49,8 @@ class _ProviderDemoState extends State<ProviderDemo> {
         Provider(create: (_) => BookModel()),
         ChangeNotifierProxyProvider<BookModel, BookManagerModel>(
           create: (_) => BookManagerModel(BookModel()),
-          update: (_, bookModel, bookManagerModel) => BookManagerModel(bookModel),
+          update: (_, bookModel, bookManagerModel) =>
+              BookManagerModel(bookModel),
         )
       ],
       child: const MaterialApp(
@@ -56,6 +58,5 @@ class _ProviderDemoState extends State<ProviderDemo> {
         home: ChangeNotifierProxyProviderExample(),
       ),
     );
-
   }
 }

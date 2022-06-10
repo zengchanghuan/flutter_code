@@ -4,11 +4,12 @@ import '../view_model/joke_view_model.dart';
 import '../widgets/joke_item.dart';
 import 'package:provider/provider.dart';
 
+//我们在页面刚进入时进行初始化，然后通过Provider的Consumer来进行监听状态的变化。
 class JokeView extends StatefulWidget {
   const JokeView({Key? key}) : super(key: key);
 
   @override
-  _JokeViewState createState() => _JokeViewState();
+  State<JokeView> createState() => _JokeViewState();
 }
 
 class _JokeViewState extends State<JokeView> {

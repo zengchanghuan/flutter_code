@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+//将网络请求回来的数据转换为对应的模型
 JokeModel jokeModelFromJson(String str) => JokeModel.fromJson(json.decode(str));
 
 String jokeModelToJson(JokeModel data) => json.encode(data.toJson());

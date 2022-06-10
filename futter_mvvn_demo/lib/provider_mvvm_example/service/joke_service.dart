@@ -3,6 +3,7 @@ import 'package:dio/dio.dart';
 import '../model/joke_model.dart';
 import '../view_model/joke_view_model.dart';
 
+//网络请求用到第三方网路请求库Dio ^4.0.0，将请求回来的数据转换为模型，并更新ViewModel数据
 class JokeService {
   static Future<void> getJokes(JokeViewModel jokeViewModel) async {
     var response = await Dio().get(

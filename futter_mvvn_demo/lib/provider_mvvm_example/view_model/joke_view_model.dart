@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../model/joke_model.dart';
-
+//这个ViewModel主要负责把请求回来的数据进行处理，并通知View层更新数据
 class JokeViewModel with ChangeNotifier {
   List<Joke>? _jokeList = [];
 
